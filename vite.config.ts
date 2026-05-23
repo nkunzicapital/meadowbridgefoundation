@@ -45,6 +45,7 @@ export default defineConfig({
       babelConfig: {
         babelrc: false, // don’t merge other Babel files
         configFile: false,
+        presets: [['@babel/preset-typescript', { allExtensions: true, isTSX: true }]],
         plugins: ['styled-jsx/babel'],
       },
     }),
